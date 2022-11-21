@@ -1,0 +1,20 @@
+{
+    "configPrinterModalTitle": "Connect your printer",
+    "bluetooth":"Bluetooth",
+    "formatsAvailable":"Available formats (58 and 80 mm)",
+    "networkCableoWifi":"Network cable or Wi-Fi",
+    "connectPrinterBluetooth":"Connect your Bluetooth printer",
+    "activeBluetoothAndGps":"Connects the TELEPHONE Bluetooth and GPS",
+    "stateBluetooth":"Bluetooth state",
+    "stateGPS":"GPS state",
+    "active":"Active",
+    "inactive":"Inactive",
+    "pressButtonPrintterToTurnOn":"Press 10 seconds the Bluetooth button of the printer",
+    "lookingForBluetoothPrinter":"Looking for a Bluetooth printer",
+    "notConnected":"Not connected",
+    "connected":"Connected",
+    "connect":"Connect",
+    "disconnect":"Disconnect",
+    "noPrinterFound":"No printer found",
+    "checkTheBluetoothIsActivated":"Check that the Bluetooth of your printer is activated"
+}

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "135490870427",
+    "project_id": "olaclick-pro-qa",
+    "storage_bucket": "olaclick-pro-qa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:135490870427:android:11d4067e3375ae77e6fa3e",
+        "android_client_info": {
+          "package_name": "com.olaclick.pro.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "135490870427-11ljkc02ejaoien8bkaboamoghnepogg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.olaclick.pro.dev",
+            "certificate_hash": "f926afa844b953567ec5fd434edb4d958cfeb1c7"
+          }
+        },
+        {
+          "client_id": "135490870427-bfbqc504pr94g41d92v3f0ask2cb602n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsUmpdGLoa5Q-WhKYQQbe0KU05_Wx0cVM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "135490870427-bfbqc504pr94g41d92v3f0ask2cb602n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
