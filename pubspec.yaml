@@ -40,6 +40,7 @@ dependencies:
   #APPSFLYER - MKT - ANDROID
   appsflyer_sdk: ^6.5.2+1
 
+
   #RESOLVE PROBLEM WITH firebase
   firebase_messaging_platform_interface: 3.1.6  
 
