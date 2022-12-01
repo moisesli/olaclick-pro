@@ -514,7 +514,7 @@ class _InAppWebViewScreenState extends State<InAppWebViewScreen>
                 controller.addJavaScriptHandler(
                     handlerName: 'handleDownloadUrl',
                     callback: (args) async {
-                      print('si paso');
+                      print('si salio url');
                       print(args[0]['downloadUrl']);
                       var nameImage = args[0]['downloadFileName'];
                       //CONVERT URL TO STRING64
