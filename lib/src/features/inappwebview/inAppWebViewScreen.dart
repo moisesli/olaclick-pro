@@ -82,7 +82,7 @@ class _InAppWebViewScreenState extends State<InAppWebViewScreen>
 
   InAppWebViewGroupOptions options = InAppWebViewGroupOptions(
       crossPlatform: InAppWebViewOptions(
-          // useOnDownloadStart: true,
+          useOnDownloadStart: true,
           javaScriptCanOpenWindowsAutomatically: true,
           useShouldOverrideUrlLoading: true),
       android: AndroidInAppWebViewOptions(
@@ -514,8 +514,12 @@ class _InAppWebViewScreenState extends State<InAppWebViewScreen>
                 controller.addJavaScriptHandler(
                     handlerName: 'handleDownloadUrl',
                     callback: (args) async {
-                      print('si salio url');
-                      print(args[0]['downloadUrl']);
+                      // print('si salio url');
+                      // print(args[0]['downloadUrl']);
+                      // final String _url_files = 'www.google.com';
+                      // void _launchURL_files() async =>
+                      //     await canLaunch(_url_files) ? await launch(_url_files) : throw 'Could not launch $_url_files';
+                      // _launchURL_files();
                       var nameImage = args[0]['downloadFileName'];
                       //CONVERT URL TO STRING64
                       var urlImage =
@@ -555,13 +559,18 @@ class _InAppWebViewScreenState extends State<InAppWebViewScreen>
                       }
                     });
               },
-              onDownloadStart: (controller, url) async {
-                print("onDownloadStart $url");
-                var jsContent =
-                    await rootBundle.loadString("assets/js/base64.js");
-                await controller.evaluateJavascript(
-                    source: jsContent.replaceAll(
-                        "blobUrlPlaceholder", url.toString()));
+              onDownloadStart: (controller, url,) async {
+                final String _url = "$url";
+                Future<String> _createFileFromString() async {
+                  final encodedStr = _url;
+                  Uint8List bytes = base64.decode(encodedStr);
+                  String dir = (await getApplicationDocumentsDirectory()).path;
+                  File file = File(
+                      "$dir/" + DateTime.now().millisecondsSinceEpoch.toString() + ".pdf");
+                  await file.writeAsBytes(bytes);
+                  return file.path;
+                }
+                _createFileFromString();
               },
               onLoadStop: (controller, url) async {
                 print("ONLOAD HIJO URL" + url.toString());
